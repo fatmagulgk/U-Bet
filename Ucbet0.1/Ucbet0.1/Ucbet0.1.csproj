@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2C2DC38-F6D4-4784-AC48-0D12F2B7F175}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Ucbet0._1</RootNamespace>
+    <AssemblyName>Ucbet0.1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAdminAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminAnasayfa.Designer.cs">
+      <DependentUpon>frmAdminAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminKampanya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminKampanya.Designer.cs">
+      <DependentUpon>frmAdminKampanya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminUcuslar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminUcuslar.Designer.cs">
+      <DependentUpon>frmAdminUcuslar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnasayfa.Designer.cs">
+      <DependentUpon>frmAnasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHesabim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHesabim.Designer.cs">
+      <DependentUpon>frmHesabim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKampanyalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKampanyalar.Designer.cs">
+      <DependentUpon>frmKampanyalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUcuslarim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUcuslarim.Designer.cs">
+      <DependentUpon>frmUcuslarim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUyeKayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUyeKayıt.Designer.cs">
+      <DependentUpon>frmUyeKayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frnSifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frnSifremiUnuttum.Designer.cs">
+      <DependentUpon>frnSifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Bilet.cs" />
+    <Compile Include="Models\Kampanyalar.cs" />
+    <Compile Include="Models\Koltuk.cs" />
+    <Compile Include="Models\Kullanici.cs" />
+    <Compile Include="Models\sysdiagrams.cs" />
+    <Compile Include="Models\ucbetdb.cs" />
+    <Compile Include="Models\Ucuslar.cs" />
+    <Compile Include="Models\Yetki.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAdminAnasayfa.resx">
+      <DependentUpon>frmAdminAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminKampanya.resx">
+      <DependentUpon>frmAdminKampanya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminUcuslar.resx">
+      <DependentUpon>frmAdminUcuslar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnasayfa.resx">
+      <DependentUpon>frmAnasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHesabim.resx">
+      <DependentUpon>frmHesabim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKampanyalar.resx">
+      <DependentUpon>frmKampanyalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUcuslarim.resx">
+      <DependentUpon>frmUcuslarim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUyeKayıt.resx">
+      <DependentUpon>frmUyeKayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frnSifremiUnuttum.resx">
+      <DependentUpon>frnSifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Image\Anasayfa123.jpg" />
+    <Content Include="Image\girişbackground.jpg" />
+    <Content Include="Image\papers.co-so07-blue-pastel-neon-soft-blur-gradation-34-iphone6-plus-wallpaper.jpg" />
+    <Content Include="Kampanyalar\Kampanya1.jpg" />
+    <Content Include="Kampanyalar\Kampanya2.png" />
+    <Content Include="Kampanyalar\Kampanya3.jpg" />
+    <Content Include="Kampanyalar\Kampanya4.jpg" />
+    <Content Include="PNG\geri.png" />
+    <Content Include="PNG\ileri.png" />
+    <Content Include="PNG\kullanıcıpng.png" />
+    <Content Include="PNG\parolapng.png" />
+    <Content Include="PNG\pngaaa.com-5315396.png" />
+    <Content Include="PNG\pngwing.com %2817%29.png" />
+    <Content Include="PNG\pngwing.com %2818%29.png" />
+    <Content Include="PNG\pngwing.com %2835%29.png" />
+    <Content Include="PNG\pngwing.com %284%29.png" />
+    <Content Include="PNG\pngwing.com %289%29.png" />
+    <Content Include="PNG\ucbetlogo.png" />
+    <Content Include="PNG\uçakgif.gif" />
+    <Content Include="PNG\uçbettabela.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
